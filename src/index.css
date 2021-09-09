@@ -28,6 +28,34 @@
       text-shadow: none;
   }    
 }
+
+.neonAn {
+  animation: flicker 1.5s infinite alternate;
+  color: #cdcfcf;
+
+}
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+    text-shadow:
+    0 0 0px #cdcfcf,
+    0 0 0px #cdcfcf,
+    0 0 0px #cdcfcf,
+    0 0 10px  rgb(255, 0, 119),
+    /* 0 0 40px  #cdcfcf, */
+    /* 0 0 45px  #cdcfcf, */
+    /* 0 0 50px  #cdcfcf, */
+    0 0 30px  rgb(255, 0, 119);
+  
+  }
+  
+  25%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
 .container {
   max-width: 1180px;
   padding: 0 1.5rem;
@@ -222,8 +250,14 @@ h2,
 h3,
 h4 {
   text-transform: uppercase; }
-  .secoundBg{
+.secoundBg{
     background: url(../src/img/secoundBg.jpg), no-repeat center right/cover;
+  }
+.thirdBg{
+    background: url(../src/img/maxresdefault.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 img {
